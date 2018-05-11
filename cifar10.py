@@ -3,9 +3,6 @@ It gets to 75% validation accuracy in 25 epochs, and 79% after 50 epochs.
 (it's still underfitting at that point, though).
 '''
 
-import gensim
-
-model = gensim.models.Word2Vec.load_word2vec_format('D:/GoogleNews-vectors-negative300.bin', binary=True)
 
 
 from __future__ import print_function
@@ -16,6 +13,8 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 import os
+
+
 
 batch_size = 32
 num_classes = 10
